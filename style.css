@@ -1,5 +1,86 @@
+@font-face {
+  font-family: "Slabbath";
+  src: url("./assets/fonts/BlackSla.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+:root {
+  --main-color: #4e002c;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.space {
+  height: 100vh;
+  background-color: #002c4e;
+  font-family: "Slabbath", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  padding: 25%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.space:last-child {
+  color: #2c4e00;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  height: 400vh;
+}
+
+.wrapper-inner {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 240px;
+  font-size: 920px;
+  color: var(--main-color);
+
+  transform-origin: top;
+
+  /* font-family: Helvetica, sans-serif; */
+  font-family: "Slabbath", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.panel span {
+  transform: translateY(60px);
+}
+
+.panel-0h {
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.panel-8 {
+  background-color: #002c4e;
+  color: white;
+  font-size: 240px;
 }
